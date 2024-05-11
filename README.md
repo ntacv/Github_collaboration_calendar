@@ -1,6 +1,6 @@
 # Github_collaboration_calendar
 
-1h of project setup
+1h of project setup; half of first coding (add map of years)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

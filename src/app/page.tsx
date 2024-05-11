@@ -20,8 +20,8 @@ export default function Home() {
   const noDetails: boolean = true;
 
   // array of range values
-  const range = (start, end, reverse=0) => {
-  var arrayRange = Array(end - start + 1).fill().map((_, idx) => start + idx)
+  const range = (start: number, end: number, reverse=0) => {
+  var arrayRange = Array(end - start + 1).fill('').map((_, idx) => start + idx)
   if (reverse) return arrayRange.reverse()
     return arrayRange
   }
@@ -39,8 +39,8 @@ export default function Home() {
         </p>
       
 
-{years.map((yearLoop) => (
-<GitHubCalendar username={username} year={yearLoop} colorScheme='dark'/>
+{years.map((yearLoop, index) => (
+<GitHubCalendar key={index} username={username} year={yearLoop} colorScheme='dark'/>
        ))}
       </div>
 
